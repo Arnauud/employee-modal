@@ -7,3 +7,5 @@ if you already have npm installed you can :
 
 
 if not, `npm install` => `npm install Arnauud/employee-modal`
+
+or `git clone https://github.com/Arnauud/employee-modal.git`
