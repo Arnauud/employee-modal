@@ -11,15 +11,16 @@ import './EmployeeModal.css'; // ✅ Ensure styles are isolated
  * @component
  * @param {boolean} isOpen - Controls whether the modal is visible (`true`) or hidden (`false`).
  * @param {function} onClose - Function that handles closing the modal when the button is clicked.
+ * @param {string} message - The message to display inside the modal.
  * @returns {JSX.Element | null} - Returns the modal component if `isOpen` is `true`, otherwise returns `null`.
  */
-const EmployeeModal = ({ isOpen, onClose }) => {
+const EmployeeModal = ({ isOpen, onClose, message }) => {
   if (!isOpen) return null; // ✅ Prevents rendering when modal is closed
 
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <p>Employee Created!</p>
+        <p>{message}</p>
         <button onClick={onClose}>Close</button>
       </div>
     </div>
@@ -30,6 +31,7 @@ const EmployeeModal = ({ isOpen, onClose }) => {
 EmployeeModal.propTypes = {
   isOpen: PropTypes.bool.isRequired, // Controls modal visibility (true = open, false = closed)
   onClose: PropTypes.func.isRequired, // Function to close the modal
+  message: PropTypes.string, // Add the message prop 
 };
 
 export default EmployeeModal;
