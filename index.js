@@ -1,2 +1,2 @@
-import EmployeeModal from "./src/EmployeeModal"; 
+import EmployeeModal from "./EmployeeModal";
 export default EmployeeModal;
