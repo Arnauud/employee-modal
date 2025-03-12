@@ -1,6 +1,6 @@
 {
   "name": "employee-modal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple React modal component for openclassroom project",
   "main": "index.js",
   "module": "index.js",
