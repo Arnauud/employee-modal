@@ -3,14 +3,14 @@ This is a small library to upload a React Modal component to display a message f
 
 ## Installation
 
-Node version: 18.16.1
+Node version: 18.2.0
 
 IDE: Visual Studio Code
 
-if you already have npm installed you can : 
-`npm install Arnauud/employee-modal`
+### First
 
+To assure you have the right modal `npm view employee-modal author` the author name is "Arnooo"
 
-if not, `npm install` => `npm install Arnauud/employee-modal`
+### Next
 
-or `git clone https://github.com/Arnauud/employee-modal.git`
+`npm install employee-modal`
