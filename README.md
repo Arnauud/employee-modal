@@ -1,16 +1,52 @@
 # Employee-Modal
-This is a small library to upload a React Modal component to display a message for an employee creation
+A simple, reusable React modal component for displaying messages, such as confirmation after an employee is successfully created.
 
 ## Installation
 
-Node version: 18.2.0
-
+Node version: 18.16.1
 IDE: Visual Studio Code
 
-### First
+#### First
 
 To assure you have the right modal `npm view employee-modal author` the author name is "Arnooo"
 
-### Next
+#### Next
 
 `npm install employee-modal`
+
+## Usage
+
+Import and use the EmployeeModal component in your React project:
+
+`import React, { useState } from 'react';
+import EmployeeModal from 'employee-modal';
+
+const ExampleComponent = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  return (
+    <div>
+      <button onClick={() => setIsModalOpen(true)}>Open Modal</button>
+      <EmployeeModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        message="Employee successfully created!"
+      />
+    </div>
+  );
+};
+
+export default ExampleComponent;`
+
+## Props
+
+## Peer Dependencies
+
+This package requires the following dependencies:
+
+`"react": ">=18.2.0",
+"react-dom": ">=18.2.0",
+"prop-types": "^15.8.1"`
+
+## Author 
+Created by Arnooo
