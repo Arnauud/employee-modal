@@ -44,14 +44,12 @@ export default ExampleComponent;
 ## Version & Dependencies 
 
 Node version: 18.16.1
-
 IDE: Visual Studio Code
 
-### This package requires the following dependencies:
-```
-"react": ">=18.2.0",
-"react-dom": ">=18.2.0",
-"prop-types": "^15.8.1"
-```
-## Author 
-Created by Arnooo
+if you already have npm installed you can : 
+`npm install Arnauud/employee-modal`
+
+
+if not, `npm install` => `npm install Arnauud/employee-modal`
+
+or `git clone https://github.com/Arnauud/employee-modal.git`
