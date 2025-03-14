@@ -40,13 +40,20 @@ export default ExampleComponent;`
 
 ## Props
 
+| Prop      | Type       | Required | Description                                                         |
+| --------- | ---------- | -------- | ------------------------------------------------------------------- |
+| `isOpen`  | `boolean`  | ✅        | Controls whether the modal is visible (`true`) or hidden (`false`). |
+| `onClose` | `function` | ✅        | Function that handles closing the modal when the button is clicked. |
+| `message` | `string`   | ❌        | Optional message to display inside the modal.                       |
+
+
 ## Peer Dependencies
 
 This package requires the following dependencies:
 
-`"react": ">=18.2.0",
-"react-dom": ">=18.2.0",
-"prop-types": "^15.8.1"`
+`"react": ">=18.2.0",`
+`"react-dom": ">=18.2.0",`
+`"prop-types": "^15.8.1"`
 
 ## Author 
 Created by Arnooo
